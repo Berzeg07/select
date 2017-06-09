@@ -1,0 +1,80 @@
+html, body, div, span, applet, object, iframe,
+h1,h2,h4,h5,h3, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; 
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ul {
+  list-style: none; 
+}
+blockquote, q {
+  quotes: none; 
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; 
+}
+span{
+    display:inline-block;
+}
+.clear{
+    clear:both;
+}
+
+// Каскадировать, чтобы отработали стили
+.container{
+  padding-top: 50px;
+  .selectric{
+    background:#fff;
+    outline: none;
+    border:2px solid #959497;
+    margin-bottom: 19px;
+    padding-left: 2px;
+}
+.selectric .label{
+  // font-family: "Lato-Light";
+  // font-size: 16px;
+  color: black;
+}
+.selectric .button{
+    background:#fff;
+    top:2px;
+    &:after{
+     border: 5px solid transparent;
+     border-top-color: #0e0e0e;
+ }
+}
+.selectric-items li{
+  color: black;
+  // font-family: "Lato-Light";
+  // font-size: 16px;
+  cursor: pointer;   
+  background-color: #fff;
+  padding: 5px 10px;
+  &:hover{
+   background: #D5D5D5;
+   color: #444;
+}
+}
+}
